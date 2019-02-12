@@ -12,9 +12,14 @@ import {AppRoutingModule} from './app-routing.module';
 import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { ShellComponent } from './components/shell/shell.component';
+import { HomeComponent } from './components/home/home.component';
+import {SettingsComponent} from './components/settings/settings.component';
+import { CallerComponent } from './components/caller/caller.component';
+import { CalleeComponent } from './components/callee/callee.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, ShellComponent, SettingsComponent, HomeComponent, CallerComponent, CalleeComponent],
     entryComponents: [],
     imports: [
         BrowserModule,
