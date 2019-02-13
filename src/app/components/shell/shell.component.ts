@@ -1,9 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {SplashScreen} from '@ionic-native/splash-screen/ngx';
-import {StatusBar} from '@ionic-native/status-bar/ngx';
-import {IonRouterOutlet, Platform} from '@ionic/angular';
-import {ActivatedRoute, ChildActivationEnd, Router, RouterOutlet} from '@angular/router';
-import {filter, take} from 'rxjs/operators';
 
 @Component({
   selector: 'app-shell',
@@ -22,6 +17,11 @@ export class ShellComponent implements OnInit {
       title: 'Settings',
       url: '/settings',
       icon: 'settings'
+    },
+    {
+      title: 'Another Root',
+      url: '/another-root',
+      icon: 'rocket'
     }
   ];
 

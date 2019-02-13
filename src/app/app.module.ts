@@ -9,24 +9,19 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 
-import {AngularFireModule} from '@angular/fire';
-import {environment} from '../environments/environment';
-import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { ShellComponent } from './components/shell/shell.component';
 import { HomeComponent } from './components/home/home.component';
 import {SettingsComponent} from './components/settings/settings.component';
-import { CallerComponent } from './components/caller/caller.component';
-import { CalleeComponent } from './components/callee/callee.component';
+import { AnotherRootComponent } from './components/another-root/another-root.component';
 
 @NgModule({
-    declarations: [AppComponent, ShellComponent, SettingsComponent, HomeComponent, CallerComponent, CalleeComponent],
+    declarations: [AppComponent, ShellComponent, SettingsComponent, HomeComponent, AnotherRootComponent],
     entryComponents: [],
     imports: [
         BrowserModule,
         IonicModule.forRoot(),
-        AppRoutingModule,
-        AngularFireModule.initializeApp(environment.firebase),
-        AngularFirestoreModule],
+        AppRoutingModule
+    ],
     providers: [
         StatusBar,
         SplashScreen,
